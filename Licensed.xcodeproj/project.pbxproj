@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		F04BBF5F228EE439007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF55228EE439007E8ADA /* Licensed.framework */; };
 		F04BBF66228EE439007E8ADA /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF58228EE439007E8ADA /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04BBF84228EE761007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF7B228EE760007E8ADA /* Licensed.framework */; };
+		F04BBF8B228EE761007E8ADA /* LicensedMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF7D228EE760007E8ADA /* LicensedMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04BBF95228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
+		F04BBF96228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
+		F04BBF9A228EE8C5007E8ADA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */; };
+		F04BBF9B228EE8C5007E8ADA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F04BBF54228EE439007E8ADA;
 			remoteInfo = Licensed;
+		};
+		F04BBF85228EE761007E8ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F04BBF4C228EE439007E8ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04BBF7A228EE760007E8ADA;
+			remoteInfo = LicensedMobile;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -29,6 +42,13 @@
 		F04BBF65228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		F04BBF7B228EE760007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04BBF7D228EE760007E8ADA /* LicensedMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicensedMobile.h; sourceTree = "<group>"; };
+		F04BBF7E228EE760007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04BBF8A228EE761007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04BBF94228EE884007E8ADA /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F04BBF78228EE760007E8ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04BBF80228EE761007E8ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04BBF84228EE761007E8ADA /* Licensed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,8 +90,10 @@
 			children = (
 				F04BBF6F228EE4FE007E8ADA /* LicensedShared */,
 				F04BBF57228EE439007E8ADA /* Licensed */,
+				F04BBF7C228EE760007E8ADA /* LicensedMobile */,
 				F04BBF70228EE51B007E8ADA /* LicensedTestsShared */,
 				F04BBF62228EE439007E8ADA /* LicensedTests */,
+				F04BBF87228EE761007E8ADA /* LicensedMobileTests */,
 				F04BBF56228EE439007E8ADA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +103,8 @@
 			children = (
 				F04BBF55228EE439007E8ADA /* Licensed.framework */,
 				F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */,
+				F04BBF7B228EE760007E8ADA /* Licensed.framework */,
+				F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +128,7 @@
 		F04BBF6F228EE4FE007E8ADA /* LicensedShared */ = {
 			isa = PBXGroup;
 			children = (
+				F04BBF94228EE884007E8ADA /* License.swift */,
 				F04BBF73228EE600007E8ADA /* Supporting Files */,
 			);
 			path = LicensedShared;
@@ -97,6 +137,7 @@
 		F04BBF70228EE51B007E8ADA /* LicensedTestsShared */ = {
 			isa = PBXGroup;
 			children = (
+				F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */,
 			);
 			path = LicensedTestsShared;
 			sourceTree = "<group>";
@@ -104,8 +145,8 @@
 		F04BBF71228EE537007E8ADA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F04BBF58228EE439007E8ADA /* Licensed.h */,
 				F04BBF59228EE439007E8ADA /* Info.plist */,
+				F04BBF58228EE439007E8ADA /* Licensed.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +168,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F04BBF7C228EE760007E8ADA /* LicensedMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF93228EE7A1007E8ADA /* Supporting Files */,
+			);
+			path = LicensedMobile;
+			sourceTree = "<group>";
+		};
+		F04BBF87228EE761007E8ADA /* LicensedMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF92228EE785007E8ADA /* Supporting Files */,
+			);
+			path = LicensedMobileTests;
+			sourceTree = "<group>";
+		};
+		F04BBF92228EE785007E8ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF8A228EE761007E8ADA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F04BBF93228EE7A1007E8ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF7E228EE760007E8ADA /* Info.plist */,
+				F04BBF7D228EE760007E8ADA /* LicensedMobile.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,6 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04BBF66228EE439007E8ADA /* Licensed.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04BBF76228EE760007E8ADA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04BBF8B228EE761007E8ADA /* LicensedMobile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +259,42 @@
 			productReference = F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F04BBF7A228EE760007E8ADA /* LicensedMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F04BBF8C228EE761007E8ADA /* Build configuration list for PBXNativeTarget "LicensedMobile" */;
+			buildPhases = (
+				F04BBF76228EE760007E8ADA /* Headers */,
+				F04BBF77228EE760007E8ADA /* Sources */,
+				F04BBF78228EE760007E8ADA /* Frameworks */,
+				F04BBF79228EE760007E8ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LicensedMobile;
+			productName = LicensedMobile;
+			productReference = F04BBF7B228EE760007E8ADA /* Licensed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F04BBF82228EE761007E8ADA /* LicensedMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F04BBF8F228EE761007E8ADA /* Build configuration list for PBXNativeTarget "LicensedMobileTests" */;
+			buildPhases = (
+				F04BBF7F228EE761007E8ADA /* Sources */,
+				F04BBF80228EE761007E8ADA /* Frameworks */,
+				F04BBF81228EE761007E8ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F04BBF86228EE761007E8ADA /* PBXTargetDependency */,
+			);
+			name = LicensedMobileTests;
+			productName = LicensedMobileTests;
+			productReference = F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,9 +307,19 @@
 				TargetAttributes = {
 					F04BBF54228EE439007E8ADA = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					F04BBF5D228EE439007E8ADA = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					F04BBF7A228EE760007E8ADA = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					F04BBF82228EE761007E8ADA = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -209,6 +337,8 @@
 			targets = (
 				F04BBF54228EE439007E8ADA /* Licensed */,
 				F04BBF5D228EE439007E8ADA /* LicensedTests */,
+				F04BBF7A228EE760007E8ADA /* LicensedMobile */,
+				F04BBF82228EE761007E8ADA /* LicensedMobileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +358,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F04BBF79228EE760007E8ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04BBF81228EE761007E8ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04BBF95228EE884007E8ADA /* License.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +387,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04BBF9A228EE8C5007E8ADA /* LicenseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04BBF77228EE760007E8ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04BBF96228EE884007E8ADA /* License.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04BBF7F228EE761007E8ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04BBF9B228EE8C5007E8ADA /* LicenseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +414,11 @@
 			isa = PBXTargetDependency;
 			target = F04BBF54228EE439007E8ADA /* Licensed */;
 			targetProxy = F04BBF60228EE439007E8ADA /* PBXContainerItemProxy */;
+		};
+		F04BBF86228EE761007E8ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F04BBF7A228EE760007E8ADA /* LicensedMobile */;
+			targetProxy = F04BBF85228EE761007E8ADA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -308,7 +475,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -366,7 +534,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -380,6 +549,7 @@
 		F04BBF6A228EE439007E8ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -399,6 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.Licensed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -406,6 +577,7 @@
 		F04BBF6B228EE439007E8ADA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,6 +604,29 @@
 		F04BBF6D228EE439007E8ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				INFOPLIST_FILE = LicensedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F04BBF6E228EE439007E8ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
@@ -445,23 +640,109 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		F04BBF6E228EE439007E8ADA /* Release */ = {
+		F04BBF8D228EE761007E8ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = LicensedTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LicensedMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobile;
+				PRODUCT_NAME = Licensed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F04BBF8E228EE761007E8ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LicensedMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobile;
+				PRODUCT_NAME = Licensed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F04BBF90228EE761007E8ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F04BBF91228EE761007E8ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -491,6 +772,24 @@
 			buildConfigurations = (
 				F04BBF6D228EE439007E8ADA /* Debug */,
 				F04BBF6E228EE439007E8ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F04BBF8C228EE761007E8ADA /* Build configuration list for PBXNativeTarget "LicensedMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04BBF8D228EE761007E8ADA /* Debug */,
+				F04BBF8E228EE761007E8ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F04BBF8F228EE761007E8ADA /* Build configuration list for PBXNativeTarget "LicensedMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04BBF90228EE761007E8ADA /* Debug */,
+				F04BBF91228EE761007E8ADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
