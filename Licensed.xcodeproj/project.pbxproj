@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F04BBF5F228EE439007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF55228EE439007E8ADA /* Licensed.framework */; };
-		F04BBF64228EE439007E8ADA /* LicensedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF63228EE439007E8ADA /* LicensedTests.swift */; };
 		F04BBF66228EE439007E8ADA /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF58228EE439007E8ADA /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,8 +26,9 @@
 		F04BBF58228EE439007E8ADA /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licensed.h; sourceTree = "<group>"; };
 		F04BBF59228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF63228EE439007E8ADA /* LicensedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensedTests.swift; sourceTree = "<group>"; };
 		F04BBF65228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,9 @@
 		F04BBF4B228EE439007E8ADA = {
 			isa = PBXGroup;
 			children = (
+				F04BBF6F228EE4FE007E8ADA /* LicensedShared */,
 				F04BBF57228EE439007E8ADA /* Licensed */,
+				F04BBF70228EE51B007E8ADA /* LicensedTestsShared */,
 				F04BBF62228EE439007E8ADA /* LicensedTests */,
 				F04BBF56228EE439007E8ADA /* Products */,
 			);
@@ -71,8 +73,7 @@
 		F04BBF57228EE439007E8ADA /* Licensed */ = {
 			isa = PBXGroup;
 			children = (
-				F04BBF58228EE439007E8ADA /* Licensed.h */,
-				F04BBF59228EE439007E8ADA /* Info.plist */,
+				F04BBF71228EE537007E8ADA /* Supporting Files */,
 			);
 			path = Licensed;
 			sourceTree = "<group>";
@@ -80,10 +81,50 @@
 		F04BBF62228EE439007E8ADA /* LicensedTests */ = {
 			isa = PBXGroup;
 			children = (
-				F04BBF63228EE439007E8ADA /* LicensedTests.swift */,
-				F04BBF65228EE439007E8ADA /* Info.plist */,
+				F04BBF72228EE549007E8ADA /* Supporting Files */,
 			);
 			path = LicensedTests;
+			sourceTree = "<group>";
+		};
+		F04BBF6F228EE4FE007E8ADA /* LicensedShared */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF73228EE600007E8ADA /* Supporting Files */,
+			);
+			path = LicensedShared;
+			sourceTree = "<group>";
+		};
+		F04BBF70228EE51B007E8ADA /* LicensedTestsShared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LicensedTestsShared;
+			sourceTree = "<group>";
+		};
+		F04BBF71228EE537007E8ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF58228EE439007E8ADA /* Licensed.h */,
+				F04BBF59228EE439007E8ADA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F04BBF72228EE549007E8ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF65228EE439007E8ADA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F04BBF73228EE600007E8ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF75228EE672007E8ADA /* LICENSE */,
+				F04BBF74228EE672007E8ADA /* README.md */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBF64228EE439007E8ADA /* LicensedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
