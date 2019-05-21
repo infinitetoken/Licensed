@@ -13,8 +13,10 @@
 		F04BBF8B228EE761007E8ADA /* LicensedMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF7D228EE760007E8ADA /* LicensedMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F04BBF95228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
 		F04BBF96228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
-		F04BBF9A228EE8C5007E8ADA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */; };
-		F04BBF9B228EE8C5007E8ADA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */; };
+		F04BBF9A228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
+		F04BBF9B228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
+		F04BBFA0228EFFFE007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF9F228EFFFE007E8ADA /* Regex.framework */; };
+		F04BBFA2228F000C007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBFA1228F000C007E8ADA /* Regex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,10 @@
 		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF8A228EE761007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF94228EE884007E8ADA /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
-		F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseTests.swift; sourceTree = "<group>"; };
+		F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV8Tests.swift; sourceTree = "<group>"; };
+		F04BBF9D228EFFA4007E8ADA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		F04BBF9F228EFFFE007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
+		F04BBFA1228F000C007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04BBFA0228EFFFE007E8ADA /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04BBFA2228F000C007E8ADA /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +101,7 @@
 				F04BBF70228EE51B007E8ADA /* LicensedTestsShared */,
 				F04BBF62228EE439007E8ADA /* LicensedTests */,
 				F04BBF87228EE761007E8ADA /* LicensedMobileTests */,
+				F04BBF9E228EFFFE007E8ADA /* Frameworks */,
 				F04BBF56228EE439007E8ADA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +145,7 @@
 		F04BBF70228EE51B007E8ADA /* LicensedTestsShared */ = {
 			isa = PBXGroup;
 			children = (
-				F04BBF99228EE8C5007E8ADA /* LicenseTests.swift */,
+				F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */,
 			);
 			path = LicensedTestsShared;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 		F04BBF73228EE600007E8ADA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
 				F04BBF75228EE672007E8ADA /* LICENSE */,
 				F04BBF74228EE672007E8ADA /* README.md */,
 			);
@@ -199,6 +208,15 @@
 				F04BBF7D228EE760007E8ADA /* LicensedMobile.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F04BBF9E228EFFFE007E8ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBFA1228F000C007E8ADA /* Regex.framework */,
+				F04BBF9F228EFFFE007E8ADA /* Regex.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,7 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBF9A228EE8C5007E8ADA /* LicenseTests.swift in Sources */,
+				F04BBF9A228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBF9B228EE8C5007E8ADA /* LicenseTests.swift in Sources */,
+				F04BBF9B228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +576,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Licensed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -586,6 +608,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Licensed/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -609,11 +635,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = LicensedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,11 +661,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = LicensedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,6 +689,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LicensedMobile/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -681,6 +721,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LicensedMobile/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -706,12 +750,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -730,12 +779,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.LicensedMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

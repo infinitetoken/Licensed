@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Regex
 
 public struct License {
     
@@ -78,6 +79,7 @@ public struct License {
     
     public enum Country: String {
         case usa = "USA"
+        case canada = "CAN"
         
         static func from(string: String?) -> Country? {
             guard let string = string else { return nil }
@@ -103,6 +105,8 @@ public struct License {
         case three = "03"
         case four = "04"
         case five = "05"
+        case six = "06"
+        case seven = "07"
         case eight = "08"
     }
     
@@ -124,7 +128,7 @@ public struct License {
         case state
         case zip
         case country
-        case licenseId
+        case customerId
         case documentId
         case firstNameTruncation
         case middleNameTruncation
@@ -155,7 +159,7 @@ public struct License {
     public let state: String?
     public let zip: String?
     public let country: Country?
-    public let licenseId: String?
+    public let customerId: String?
     public let documentId: String?
     public let firstNameTruncation: Truncation?
     public let middleNameTruncation: Truncation?
@@ -191,7 +195,7 @@ public struct License {
             state: self.parseString(key: self.key(key: .state, for: version), string: string),
             zip: self.parseString(key: self.key(key: .zip, for: version), string: string),
             country: Country.from(string: self.parseString(key: self.key(key: .country, for: version), string: string)),
-            licenseId: self.parseString(key: self.key(key: .licenseId, for: version), string: string),
+            customerId: self.parseString(key: self.key(key: .customerId, for: version), string: string),
             documentId: self.parseString(key: self.key(key: .documentId, for: version), string: string),
             firstNameTruncation: Truncation.from(string: self.parseString(key: self.key(key: .firstNameTruncation, for: version), string: string)),
             middleNameTruncation: Truncation.from(string: self.parseString(key: self.key(key: .middleNameTruncation, for: version), string: string)),
@@ -215,23 +219,249 @@ public struct License {
     // MARK: - Helpers
     
     private static func parseVersion(string: String) -> Version? {
-        return nil
+        guard let match = Regex("\\d{6}(\\d{2})").firstMatch(in: string) else { return nil }
+        guard let firstCapture = match.captures.first else { return nil }
+        guard let version = firstCapture else { return nil }
+        
+        return Version(rawValue: version)
     }
     
     private static func parseString(key: String?, string: String) -> String? {
-        return nil
+        guard let key = key else { return nil }
+        
+        do {
+            if let match = try Regex.init(string: "\(key)(.+)\\b").firstMatch(in: string) {
+                if let firstCapture = match.captures.first {
+                    return firstCapture
+                } else {
+                    return nil
+                }
+            } else {
+                return nil
+            }
+        } catch {
+            return nil
+        }
     }
     
     private static func parseDate(key: String?, string: String) -> Date? {
-        return nil
+        guard let key = key else { return nil }
+        
+        do {
+            if let match = try Regex.init(string: "\(key)(.+)\\b").firstMatch(in: string) {
+                if let firstCapture = match.captures.first, let date = firstCapture {
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "MMddyyyy"
+                    
+                    return formatter.date(from: date)
+                } else {
+                    return nil
+                }
+            } else {
+                return nil
+            }
+        } catch {
+            return nil
+        }
     }
     
     private static func parseDouble(key: String?, string: String) -> Double? {
-        return nil
+        guard let key = key else { return nil }
+        
+        do {
+            if let match = try Regex.init(string: "\(key)(\\d+)\\b").firstMatch(in: string) {
+                if let firstCapture = match.captures.first, let value = firstCapture {
+                    return Double(value)
+                } else {
+                    return nil
+                }
+            } else {
+                return nil
+            }
+        } catch {
+            return nil
+        }
     }
     
     private static func key(key: Key, for version: Version?) -> String? {
-        return nil
+        guard let version = version else { return nil }
+        
+        switch key {
+        case .firstName:
+            switch version {
+            case .two, .three:
+                return "DCT"
+            case .one, .four, .five, .six, .seven, .eight:
+                return "DAC"
+            }
+        case .middleName:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAD"
+            }
+        case .lastName:
+            switch version {
+            case .one:
+                return "DAB"
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DCS"
+            }
+        case .suffix:
+            switch version {
+            case .one:
+                return "DBN"
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DCU"
+            }
+        case .expirationDate:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBA"
+            }
+        case .issueDate:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBD"
+            }
+        case .dateOfBirth:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBB"
+            }
+        case .gender:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBC"
+            }
+        case .eyeColor:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAY"
+            }
+        case .hairColor:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAZ"
+            }
+        case .height:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAU"
+            }
+        case .street1:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAG"
+            }
+        case .street2:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAH"
+            }
+        case .city:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAI"
+            }
+        case .state:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAJ"
+            }
+        case .zip:
+            switch version {
+            case .one, .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAK"
+            }
+        case .country:
+            switch version {
+            case .one:
+                return nil
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DCG"
+            }
+        case .customerId:
+            switch version {
+            case .one:
+                return "DBJ"
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DAQ"
+            }
+        case .documentId:
+            switch version {
+            case .one:
+                return nil
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DCF"
+            }
+        case .firstNameTruncation:
+            switch version {
+            case .one, .three:
+                return nil
+            case .two, .four, .five, .six, .seven, .eight:
+                return "DDF"
+            }
+        case .middleNameTruncation:
+            switch version {
+            case .one, .three:
+                return nil
+            case .two, .four, .five, .six, .seven, .eight:
+                return "DDG"
+            }
+        case .lastNameTruncation:
+            switch version {
+            case .one, .three:
+                return nil
+            case .two, .four, .five, .six, .seven, .eight:
+                return "DDE"
+            }
+        case .placeOfBirth:
+            switch version {
+            case .one, .two:
+                return nil
+            case .three, .four, .five, .six, .seven, .eight:
+                return "DCI"
+            }
+        case .auditInformation:
+            switch version {
+            case .one, .two:
+                return nil
+            case .three, .four, .five, .six, .seven, .eight:
+                return "DCJ"
+            }
+        case .inventoryControlNumber:
+            switch version {
+            case .one, .two:
+                return nil
+            case .three, .four, .five, .six, .seven, .eight:
+                return "DCK"
+            }
+        case .firstNameAlias:
+            switch version {
+            case .one:
+                return "DBP"
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBG"
+            }
+        case .lastNameAlias:
+            switch version {
+            case .one:
+                return "DBO"
+            case .two, .three, .four, .five, .six, .seven, .eight:
+                return "DBN"
+            }
+        case .suffixAlias:
+            switch version {
+            case .one:
+                return "DBR"
+            case .two:
+                return nil
+            case .three, .four, .five, .six, .seven, .eight:
+                return "DBS"
+            }
+        default:
+            return nil
+        }
     }
     
 }
