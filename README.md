@@ -142,7 +142,7 @@ Run `carthage` to build the framework and drag the built `Licensed.framework` in
 
 ### Attribution
 
-This library was heavily influenced by the work from (https://github.com/ksoftllc/license-parser)[https://github.com/ksoftllc/license-parser].
+This library was heavily influenced by the work from https://github.com/ksoftllc/license-parser
 
 ### License
 
