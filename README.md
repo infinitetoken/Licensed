@@ -4,6 +4,20 @@
 
 ### Usage
 
+```swift
+
+let barcodeString: String = "..."
+
+let license = License.parse(string: barcodeString)
+
+print(license.firstName)
+// => Optional("John")
+print(license.middleName)
+// => Optional("Quincy")
+print(license.lastName)
+// => Optional("Public")
+```
+
 ### AAMVA Standard Supported Fields
 | Name                   | Description                                                                                                                                          | Type   | `ParsedLicense` Attribute |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:--------------------------|
