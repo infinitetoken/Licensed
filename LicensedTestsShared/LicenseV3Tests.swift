@@ -1,27 +1,24 @@
 //
-//  LicensedV8Tests.swift
+//  LicenseV3Tests.swift
 //  Licensed
 //
-//  Created by Aaron Wright on 5/17/19.
+//  Created by Aaron Wright on 5/21/19.
 //  Copyright © 2019 Infinite Token. All rights reserved.
 //
 
 import XCTest
 @testable import Licensed
 
-class LicenseV8Tests: XCTestCase {
+class LicenseV3Tests: XCTestCase {
     
     var sample: String = """
         @
 
-        ANSI 636026080102DL00410288ZA03290015DLDAQD12345678
+        ANSI 636026030102DL00410288ZA03290015DLDAQD12345678
         DCSPUBLIC
-        DDEN
-        DACJOHN
+        DCTJOHN
         DCUJR
-        DDFN
         DADQUINCY
-        DDGN
         DCAD
         DCIOMAHA
         DCBNONE
@@ -57,13 +54,13 @@ class LicenseV8Tests: XCTestCase {
         guard let data = self.sample.data(using: .utf8) else { XCTFail(); return }
         guard let license = License.parse(data: data) else { XCTFail(); return }
         
-        XCTAssertEqual(license.version, License.Version.eight)
+        XCTAssertEqual(license.version, License.Version.three)
     }
     
     func testParseVersion() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.version, License.Version.eight)
+        XCTAssertEqual(license.version, License.Version.three)
     }
     
     func testParseFirstName() {
@@ -192,19 +189,19 @@ class LicenseV8Tests: XCTestCase {
     func testParseFirstNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.firstNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.firstNameTruncation)
     }
     
     func testParseMiddleNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.middleNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.middleNameTruncation)
     }
     
     func testParseLastNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.lastNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.lastNameTruncation)
     }
     
     func testParsePlaceOfBirth() {

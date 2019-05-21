@@ -1,24 +1,24 @@
 //
-//  LicensedV8Tests.swift
+//  LicenseV1Tests.swift
 //  Licensed
 //
-//  Created by Aaron Wright on 5/17/19.
+//  Created by Aaron Wright on 5/21/19.
 //  Copyright © 2019 Infinite Token. All rights reserved.
 //
 
 import XCTest
 @testable import Licensed
 
-class LicenseV8Tests: XCTestCase {
+class LicenseV1Tests: XCTestCase {
     
     var sample: String = """
         @
 
-        ANSI 636026080102DL00410288ZA03290015DLDAQD12345678
-        DCSPUBLIC
+        ANSI 636026010102DL00410288ZA03290015DLDBJD12345678
+        DABPUBLIC
         DDEN
         DACJOHN
-        DCUJR
+        DBNJR
         DDFN
         DADQUINCY
         DDGN
@@ -26,9 +26,9 @@ class LicenseV8Tests: XCTestCase {
         DCIOMAHA
         DCBNONE
         DCDNONE
-        DBNPUCKY
-        DBGSTICKS
-        DBSJ
+        DBOPUCKY
+        DBPSTICKS
+        DBRJ
         DBD08242015
         DBB01311970
         DBA01312035
@@ -53,17 +53,10 @@ class LicenseV8Tests: XCTestCase {
         ZAC
     """
     
-    func testParseFromData() {
-        guard let data = self.sample.data(using: .utf8) else { XCTFail(); return }
-        guard let license = License.parse(data: data) else { XCTFail(); return }
-        
-        XCTAssertEqual(license.version, License.Version.eight)
-    }
-    
     func testParseVersion() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.version, License.Version.eight)
+        XCTAssertEqual(license.version, License.Version.one)
     }
     
     func testParseFirstName() {
@@ -174,7 +167,7 @@ class LicenseV8Tests: XCTestCase {
     func testParseCountry() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.country, License.Country.usa)
+        XCTAssertNil(license.country)
     }
     
     func testParseCustomerId() {
@@ -186,43 +179,43 @@ class LicenseV8Tests: XCTestCase {
     func testParseDocumentId() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.documentId, "83D9BN217QO983B1")
+        XCTAssertNil(license.documentId)
     }
     
     func testParseFirstNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.firstNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.firstNameTruncation)
     }
     
     func testParseMiddleNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.middleNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.middleNameTruncation)
     }
     
     func testParseLastNameTruncation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.lastNameTruncation, License.Truncation.notTruncated)
+        XCTAssertNil(license.lastNameTruncation)
     }
     
     func testParsePlaceOfBirth() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.placeOfBirth, "OMAHA")
+        XCTAssertNil(license.placeOfBirth)
     }
     
     func testParseAuditInformation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.auditInformation, "AUDIT")
+        XCTAssertNil(license.auditInformation)
     }
     
     func testParseInventoryControlNumber() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.inventoryControlNumber, "12345678900000000000")
+        XCTAssertNil(license.inventoryControlNumber)
     }
     
     func testParseFirstNameAlias() {

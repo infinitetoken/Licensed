@@ -220,10 +220,8 @@ public struct License {
     
     private static func parseVersion(string: String) -> Version? {
         guard let match = Regex("\\d{6}(\\d{2})").firstMatch(in: string) else { return nil }
-        guard let firstCapture = match.captures.first else { return nil }
-        guard let version = firstCapture else { return nil }
         
-        return Version(rawValue: version)
+        return Version(rawValue: match.captures.first!!)
     }
     
     private static func parseString(key: String?, string: String) -> String? {
@@ -231,11 +229,7 @@ public struct License {
         
         do {
             if let match = try Regex.init(string: "\(key)(.+)\\b").firstMatch(in: string) {
-                if let firstCapture = match.captures.first {
-                    return firstCapture
-                } else {
-                    return nil
-                }
+                return match.captures.first!
             } else {
                 return nil
             }
@@ -249,14 +243,10 @@ public struct License {
         
         do {
             if let match = try Regex.init(string: "\(key)(.+)\\b").firstMatch(in: string) {
-                if let firstCapture = match.captures.first, let date = firstCapture {
-                    let formatter = DateFormatter()
-                    formatter.dateFormat = "MMddyyyy"
-                    
-                    return formatter.date(from: date)
-                } else {
-                    return nil
-                }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "MMddyyyy"
+                
+                return formatter.date(from: match.captures.first!!)
             } else {
                 return nil
             }
@@ -270,11 +260,7 @@ public struct License {
         
         do {
             if let match = try Regex.init(string: "\(key)(\\d+)\\b").firstMatch(in: string) {
-                if let firstCapture = match.captures.first, let value = firstCapture {
-                    return Double(value)
-                } else {
-                    return nil
-                }
+                return Double(match.captures.first!!)
             } else {
                 return nil
             }

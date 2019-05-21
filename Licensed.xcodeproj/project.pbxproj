@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02F5FCA229486A8008FB7CA /* LicenseV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */; };
+		F02F5FCB229486A8008FB7CA /* LicenseV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */; };
+		F02F5FCD22948990008FB7CA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FCC22948990008FB7CA /* LicenseTests.swift */; };
+		F02F5FCE22948990008FB7CA /* LicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FCC22948990008FB7CA /* LicenseTests.swift */; };
+		F02F5FD022948F17008FB7CA /* LicenseV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */; };
+		F02F5FD122948F17008FB7CA /* LicenseV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */; };
+		F02F5FD322949066008FB7CA /* LicenseV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */; };
+		F02F5FD422949066008FB7CA /* LicenseV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */; };
 		F04BBF5F228EE439007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF55228EE439007E8ADA /* Licensed.framework */; };
 		F04BBF66228EE439007E8ADA /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF58228EE439007E8ADA /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F04BBF84228EE761007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF7B228EE760007E8ADA /* Licensed.framework */; };
@@ -37,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV1Tests.swift; sourceTree = "<group>"; };
+		F02F5FCC22948990008FB7CA /* LicenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseTests.swift; sourceTree = "<group>"; };
+		F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV2Tests.swift; sourceTree = "<group>"; };
+		F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV3Tests.swift; sourceTree = "<group>"; };
 		F04BBF55228EE439007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF58228EE439007E8ADA /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licensed.h; sourceTree = "<group>"; };
 		F04BBF59228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +157,10 @@
 		F04BBF70228EE51B007E8ADA /* LicensedTestsShared */ = {
 			isa = PBXGroup;
 			children = (
+				F02F5FCC22948990008FB7CA /* LicenseTests.swift */,
+				F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */,
+				F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */,
+				F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */,
 				F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */,
 			);
 			path = LicensedTestsShared;
@@ -405,7 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02F5FCA229486A8008FB7CA /* LicenseV1Tests.swift in Sources */,
+				F02F5FD322949066008FB7CA /* LicenseV3Tests.swift in Sources */,
+				F02F5FD022948F17008FB7CA /* LicenseV2Tests.swift in Sources */,
 				F04BBF9A228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */,
+				F02F5FCD22948990008FB7CA /* LicenseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +441,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02F5FCB229486A8008FB7CA /* LicenseV1Tests.swift in Sources */,
+				F02F5FD422949066008FB7CA /* LicenseV3Tests.swift in Sources */,
+				F02F5FD122948F17008FB7CA /* LicenseV2Tests.swift in Sources */,
 				F04BBF9B228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */,
+				F02F5FCE22948990008FB7CA /* LicenseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

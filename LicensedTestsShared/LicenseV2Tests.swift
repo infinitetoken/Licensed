@@ -1,39 +1,36 @@
 //
-//  LicensedV8Tests.swift
+//  LicenseV2Tests.swift
 //  Licensed
 //
-//  Created by Aaron Wright on 5/17/19.
+//  Created by Aaron Wright on 5/21/19.
 //  Copyright © 2019 Infinite Token. All rights reserved.
 //
 
 import XCTest
 @testable import Licensed
 
-class LicenseV8Tests: XCTestCase {
+class LicenseV2Tests: XCTestCase {
     
     var sample: String = """
         @
 
-        ANSI 636026080102DL00410288ZA03290015DLDAQD12345678
+        ANSI 636026020102DL00410288ZA03290015DLDAQD12345678
         DCSPUBLIC
         DDEN
-        DACJOHN
+        DCTJOHN
         DCUJR
         DDFN
         DADQUINCY
         DDGN
         DCAD
-        DCIOMAHA
         DCBNONE
         DCDNONE
         DBNPUCKY
         DBGSTICKS
-        DBSJ
         DBD08242015
         DBB01311970
         DBA01312035
         DBC1
-        DCJAUDIT
         DAU069 in
         DAYGRN
         DAG789 E OAK ST
@@ -45,7 +42,6 @@ class LicenseV8Tests: XCTestCase {
         DCGUSA
         DAW180
         DAZBRO
-        DCK12345678900000000000
         DDB02142014
         DDK1
         ZAZAAN
@@ -57,13 +53,13 @@ class LicenseV8Tests: XCTestCase {
         guard let data = self.sample.data(using: .utf8) else { XCTFail(); return }
         guard let license = License.parse(data: data) else { XCTFail(); return }
         
-        XCTAssertEqual(license.version, License.Version.eight)
+        XCTAssertEqual(license.version, License.Version.two)
     }
     
     func testParseVersion() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.version, License.Version.eight)
+        XCTAssertEqual(license.version, License.Version.two)
     }
     
     func testParseFirstName() {
@@ -210,19 +206,19 @@ class LicenseV8Tests: XCTestCase {
     func testParsePlaceOfBirth() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.placeOfBirth, "OMAHA")
+        XCTAssertNil(license.placeOfBirth)
     }
     
     func testParseAuditInformation() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.auditInformation, "AUDIT")
+        XCTAssertNil(license.auditInformation)
     }
     
     func testParseInventoryControlNumber() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.inventoryControlNumber, "12345678900000000000")
+        XCTAssertNil(license.inventoryControlNumber)
     }
     
     func testParseFirstNameAlias() {
@@ -240,7 +236,7 @@ class LicenseV8Tests: XCTestCase {
     func testParseSuffixAlias() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.suffixAlias, "J")
+        XCTAssertNil(license.suffixAlias)
     }
     
 }
