@@ -126,7 +126,7 @@ public struct License {
         case street2
         case city
         case state
-        case zip
+        case postalCode
         case country
         case customerId
         case documentId
@@ -157,7 +157,7 @@ public struct License {
     public let street2: String?
     public let city: String?
     public let state: String?
-    public let zip: String?
+    public let postalCode: String?
     public let country: Country?
     public let customerId: String?
     public let documentId: String?
@@ -193,7 +193,7 @@ public struct License {
             street2: self.parseString(key: self.key(key: .street2, for: version), string: string),
             city: self.parseString(key: self.key(key: .city, for: version), string: string),
             state: self.parseString(key: self.key(key: .state, for: version), string: string),
-            zip: self.parseString(key: self.key(key: .zip, for: version), string: string),
+            postalCode: self.parseString(key: self.key(key: .postalCode, for: version), string: string),
             country: Country.from(string: self.parseString(key: self.key(key: .country, for: version), string: string)),
             customerId: self.parseString(key: self.key(key: .customerId, for: version), string: string),
             documentId: self.parseString(key: self.key(key: .documentId, for: version), string: string),
@@ -354,7 +354,7 @@ public struct License {
             case .one, .two, .three, .four, .five, .six, .seven, .eight:
                 return "DAJ"
             }
-        case .zip:
+        case .postalCode:
             switch version {
             case .one, .two, .three, .four, .five, .six, .seven, .eight:
                 return "DAK"

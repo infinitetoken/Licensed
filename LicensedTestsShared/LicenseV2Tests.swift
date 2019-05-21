@@ -164,7 +164,7 @@ class LicenseV2Tests: XCTestCase {
     func testParseZip() {
         let license = License.parse(string: self.sample)
         
-        XCTAssertEqual(license.zip, "902230000")
+        XCTAssertEqual(license.postalCode, "902230000")
     }
     
     func testParseCountry() {

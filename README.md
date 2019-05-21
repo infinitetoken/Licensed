@@ -19,7 +19,7 @@ print(license.lastName)
 ```
 
 ### AAMVA Standard Supported Fields
-| Name                   | Description                                                                                                                                          | Type   | `ParsedLicense` Attribute |
+| Name                   | Description                                                                                                                                          | Type   | `License` Attribute |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:--------------------------|
 | First Name             | Customer First Name                                                                                                                                  | String | `firstName`               |
 | Last Name              | Customer Last Name                                                                                                                                   | String | `lastName`                |
@@ -35,7 +35,7 @@ print(license.lastName)
 | Second Street Address  | Customer Street Address Line 2                                                                                                                       | String | `street2`                 |
 | City                   | Customer City                                                                                                                                        | String | `city`                    |
 | State                  | Customer State                                                                                                                                       | String | `state`                   |
-| Zip Code               | Customer Zip Code                                                                                                                                    | String | `zip`                     |
+| Postal Code               | Customer Zip Code                                                                                                                                    | String | `postalCode`                     |
 | Customer ID            | Unique Customer ID Number                                                                                                                            | String | `customerId`              |
 | Document ID            | Unique Document ID Number                                                                                                                            | String | `documentId`              |
 | Issuing Country        | Issuing Country                                                                                                                                      | Enum   | `issuingCountry`          |
@@ -72,7 +72,7 @@ Below is a table of AAMVA Element Ids and the fields to which they map by AAMVA 
 | Street Address         |  **DAG**  |  **DAG**  |  **DAG**  |  **DAG**  |  **DAG**  |  **DAG**  |  **DAG**  |  **DAG**  |     Y     |
 | City                   |  **DAI**  |  **DAI**  |  **DAI**  |  **DAI**  |  **DAI**  |  **DAI**  |  **DAI**  |  **DAI**  |     Y     |
 | State                  |  **DAJ**  |  **DAJ**  |  **DAJ**  |  **DAJ**  |  **DAJ**  |  **DAJ**  |  **DAJ**  |  **DAJ**  |     Y     |
-| Zip Code               |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |     Y     |
+| Postal Code               |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |  **DAK**  |     Y     |
 | Customer ID            |  **DBJ**  |  **DAQ**  |  **DAQ**  |  **DAQ**  |  **DAQ**  |  **DAQ**  |  **DAQ**  |  **DAQ**  |     Y     |
 | Document ID            |   `--`    |  **DCF**  |  **DCF**  |  **DCF**  |  **DCF**  |  **DCF**  |  **DCF**  |  **DCF**  |     Y     |
 | Issuing Country        |   `--`    |  **DCG**  |  **DCG**  |  **DCG**  |  **DCG**  |  **DCG**  |  **DCG**  |  **DCG**  |     Y     |
