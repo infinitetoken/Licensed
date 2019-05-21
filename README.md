@@ -2,9 +2,9 @@
 
 ![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)
 
-## AAMVA Standard
+### Usage
 
-### Supported Fields
+### AAMVA Standard Supported Fields
 | Name                   | Description                                                                                                                                          | Type   | `ParsedLicense` Attribute |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:--------------------------|
 | First Name             | Customer First Name                                                                                                                                  | String | `firstName`               |
@@ -142,7 +142,7 @@ Run `carthage` to build the framework and drag the built `Licensed.framework` in
 
 ### Attribution
 
-This library was heavily influenced by the work from https://github.com/ksoftllc/license-parser
+This library was heavily influenced by the work from https://github.com/ksoftllc/license-parser.
 
 ### License
 
