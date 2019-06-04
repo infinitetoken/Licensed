@@ -23,6 +23,8 @@
 		F04BBF9B228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
 		F04BBFA0228EFFFE007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF9F228EFFFE007E8ADA /* Regex.framework */; };
 		F04BBFA2228F000C007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBFA1228F000C007E8ADA /* Regex.framework */; };
+		F058C26C22A708DD002FCEA1 /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F058C26A22A708DA002FCEA1 /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F058C26D22A708DD002FCEA1 /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F058C26A22A708DA002FCEA1 /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +51,19 @@
 		F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV3Tests.swift; sourceTree = "<group>"; };
 		F04BBF55228EE439007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Sources/README.md; sourceTree = SOURCE_ROOT; };
+		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = Sources/LICENSE; sourceTree = SOURCE_ROOT; };
 		F04BBF7B228EE760007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF94228EE884007E8ADA /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV8Tests.swift; sourceTree = "<group>"; };
-		F04BBF9D228EFFA4007E8ADA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		F04BBF9D228EFFA4007E8ADA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = Sources/Cartfile; sourceTree = SOURCE_ROOT; };
 		F04BBF9F228EFFFE007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
 		F04BBFA1228F000C007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
 		F058C25722A6FDE0002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
-		F058C25822A6FE35002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		F058C25922A6FEB2002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
-		F058C25A22A6FEB2002FCEA1 /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Licensed.h; path = Source/Licensed.h; sourceTree = SOURCE_ROOT; };
+		F058C25822A6FE35002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = Sources/Package.swift; sourceTree = SOURCE_ROOT; };
+		F058C26A22A708DA002FCEA1 /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licensed.h; sourceTree = "<group>"; };
+		F058C26B22A708DB002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 		F04BBF4B228EE439007E8ADA = {
 			isa = PBXGroup;
 			children = (
-				F058C25522A6FD52002FCEA1 /* Source */,
+				F058C25522A6FD52002FCEA1 /* Sources */,
 				F058C25622A6FD68002FCEA1 /* Tests */,
 				F04BBF9E228EFFFE007E8ADA /* Frameworks */,
 				F04BBF56228EE439007E8ADA /* Products */,
@@ -130,20 +132,6 @@
 			path = LicensedTests;
 			sourceTree = "<group>";
 		};
-		F04BBF73228EE600007E8ADA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F058C25922A6FEB2002FCEA1 /* Info.plist */,
-				F058C25A22A6FEB2002FCEA1 /* Licensed.h */,
-				F058C25822A6FE35002FCEA1 /* Package.swift */,
-				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
-				F04BBF75228EE672007E8ADA /* LICENSE */,
-				F04BBF74228EE672007E8ADA /* README.md */,
-			);
-			name = "Supporting Files";
-			path = LicensedShared;
-			sourceTree = "<group>";
-		};
 		F04BBF9E228EFFFE007E8ADA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,13 +141,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F058C25522A6FD52002FCEA1 /* Source */ = {
+		F058C25522A6FD52002FCEA1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				F04BBF94228EE884007E8ADA /* License.swift */,
-				F04BBF73228EE600007E8ADA /* Supporting Files */,
+				F058C26922A7088A002FCEA1 /* Supporting Files */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		F058C25622A6FD68002FCEA1 /* Tests */ = {
@@ -175,6 +163,19 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		F058C26922A7088A002FCEA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F058C26B22A708DB002FCEA1 /* Info.plist */,
+				F058C26A22A708DA002FCEA1 /* Licensed.h */,
+				F058C25822A6FE35002FCEA1 /* Package.swift */,
+				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
+				F04BBF75228EE672007E8ADA /* LICENSE */,
+				F04BBF74228EE672007E8ADA /* README.md */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,6 +183,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F058C26C22A708DD002FCEA1 /* Licensed.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +191,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F058C26D22A708DD002FCEA1 /* Licensed.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +546,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,7 +578,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,7 +658,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -687,7 +690,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

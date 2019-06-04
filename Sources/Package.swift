@@ -27,7 +27,7 @@ let package = Package(
         .target(
             name: "Licensed",
             dependencies: ["Regex"],
-            path: "Source"),
+            path: "Sources"),
         .testTarget(
             name: "LicensedTests",
             dependencies: ["Licensed"],
