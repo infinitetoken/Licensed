@@ -16,9 +16,7 @@
 		F02F5FD322949066008FB7CA /* LicenseV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */; };
 		F02F5FD422949066008FB7CA /* LicenseV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */; };
 		F04BBF5F228EE439007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF55228EE439007E8ADA /* Licensed.framework */; };
-		F04BBF66228EE439007E8ADA /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF58228EE439007E8ADA /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F04BBF84228EE761007E8ADA /* Licensed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF7B228EE760007E8ADA /* Licensed.framework */; };
-		F04BBF8B228EE761007E8ADA /* LicensedMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = F04BBF7D228EE760007E8ADA /* LicensedMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F04BBF95228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
 		F04BBF96228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
 		F04BBF9A228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
@@ -50,22 +48,20 @@
 		F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV2Tests.swift; sourceTree = "<group>"; };
 		F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV3Tests.swift; sourceTree = "<group>"; };
 		F04BBF55228EE439007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF58228EE439007E8ADA /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licensed.h; sourceTree = "<group>"; };
-		F04BBF59228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF65228EE439007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		F04BBF7B228EE760007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF7D228EE760007E8ADA /* LicensedMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicensedMobile.h; sourceTree = "<group>"; };
-		F04BBF7E228EE760007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF8A228EE761007E8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BBF94228EE884007E8ADA /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV8Tests.swift; sourceTree = "<group>"; };
 		F04BBF9D228EFFA4007E8ADA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F04BBF9F228EFFFE007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
 		F04BBFA1228F000C007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
+		F058C25722A6FDE0002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		F058C25822A6FE35002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		F058C25922A6FEB2002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		F058C25A22A6FEB2002FCEA1 /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Licensed.h; path = Source/Licensed.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +103,8 @@
 		F04BBF4B228EE439007E8ADA = {
 			isa = PBXGroup;
 			children = (
-				F04BBF6F228EE4FE007E8ADA /* LicensedShared */,
-				F04BBF57228EE439007E8ADA /* Licensed */,
-				F04BBF7C228EE760007E8ADA /* LicensedMobile */,
-				F04BBF70228EE51B007E8ADA /* LicensedTestsShared */,
-				F04BBF62228EE439007E8ADA /* LicensedTests */,
-				F04BBF87228EE761007E8ADA /* LicensedMobileTests */,
+				F058C25522A6FD52002FCEA1 /* Source */,
+				F058C25622A6FD68002FCEA1 /* Tests */,
 				F04BBF9E228EFFFE007E8ADA /* Frameworks */,
 				F04BBF56228EE439007E8ADA /* Products */,
 			);
@@ -129,101 +121,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F04BBF57228EE439007E8ADA /* Licensed */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF71228EE537007E8ADA /* Supporting Files */,
-			);
-			path = Licensed;
-			sourceTree = "<group>";
-		};
-		F04BBF62228EE439007E8ADA /* LicensedTests */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF72228EE549007E8ADA /* Supporting Files */,
-			);
-			path = LicensedTests;
-			sourceTree = "<group>";
-		};
-		F04BBF6F228EE4FE007E8ADA /* LicensedShared */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF94228EE884007E8ADA /* License.swift */,
-				F04BBF73228EE600007E8ADA /* Supporting Files */,
-			);
-			path = LicensedShared;
-			sourceTree = "<group>";
-		};
-		F04BBF70228EE51B007E8ADA /* LicensedTestsShared */ = {
-			isa = PBXGroup;
-			children = (
-				F02F5FCC22948990008FB7CA /* LicenseTests.swift */,
-				F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */,
-				F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */,
-				F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */,
-				F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */,
-			);
-			path = LicensedTestsShared;
-			sourceTree = "<group>";
-		};
-		F04BBF71228EE537007E8ADA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF59228EE439007E8ADA /* Info.plist */,
-				F04BBF58228EE439007E8ADA /* Licensed.h */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F04BBF72228EE549007E8ADA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F04BBF65228EE439007E8ADA /* Info.plist */,
+				F058C25722A6FDE0002FCEA1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = LicensedTests;
 			sourceTree = "<group>";
 		};
 		F04BBF73228EE600007E8ADA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F058C25922A6FEB2002FCEA1 /* Info.plist */,
+				F058C25A22A6FEB2002FCEA1 /* Licensed.h */,
+				F058C25822A6FE35002FCEA1 /* Package.swift */,
 				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
 				F04BBF75228EE672007E8ADA /* LICENSE */,
 				F04BBF74228EE672007E8ADA /* README.md */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F04BBF7C228EE760007E8ADA /* LicensedMobile */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF93228EE7A1007E8ADA /* Supporting Files */,
-			);
-			path = LicensedMobile;
-			sourceTree = "<group>";
-		};
-		F04BBF87228EE761007E8ADA /* LicensedMobileTests */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF92228EE785007E8ADA /* Supporting Files */,
-			);
-			path = LicensedMobileTests;
-			sourceTree = "<group>";
-		};
-		F04BBF92228EE785007E8ADA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF8A228EE761007E8ADA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F04BBF93228EE7A1007E8ADA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F04BBF7E228EE760007E8ADA /* Info.plist */,
-				F04BBF7D228EE760007E8ADA /* LicensedMobile.h */,
-			);
-			name = "Supporting Files";
+			path = LicensedShared;
 			sourceTree = "<group>";
 		};
 		F04BBF9E228EFFFE007E8ADA /* Frameworks */ = {
@@ -235,6 +153,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F058C25522A6FD52002FCEA1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F04BBF94228EE884007E8ADA /* License.swift */,
+				F04BBF73228EE600007E8ADA /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F058C25622A6FD68002FCEA1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F02F5FCC22948990008FB7CA /* LicenseTests.swift */,
+				F02F5FC9229486A8008FB7CA /* LicenseV1Tests.swift */,
+				F02F5FCF22948F17008FB7CA /* LicenseV2Tests.swift */,
+				F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */,
+				F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */,
+				F04BBF72228EE549007E8ADA /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -242,7 +182,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBF66228EE439007E8ADA /* Licensed.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +189,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBF8B228EE761007E8ADA /* LicensedMobile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,8 +455,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -576,8 +514,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -605,7 +543,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Licensed/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,7 +575,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Licensed/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -663,7 +601,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = LicensedTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -689,7 +627,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = LicensedTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -717,7 +655,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LicensedMobile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,7 +687,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LicensedMobile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,7 +716,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -807,7 +745,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LicensedMobileTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
