@@ -51,7 +51,6 @@
 		F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV3Tests.swift; sourceTree = "<group>"; };
 		F04BBF55228EE439007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF74228EE672007E8ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Sources/README.md; sourceTree = SOURCE_ROOT; };
 		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = Sources/LICENSE; sourceTree = SOURCE_ROOT; };
 		F04BBF7B228EE760007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +60,10 @@
 		F04BBF9F228EFFFE007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
 		F04BBFA1228F000C007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
 		F058C25722A6FDE0002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
-		F058C25822A6FE35002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = Sources/Package.swift; sourceTree = SOURCE_ROOT; };
 		F058C26A22A708DA002FCEA1 /* Licensed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licensed.h; sourceTree = "<group>"; };
 		F058C26B22A708DB002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F058C28722A70BBB002FCEA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F058C28822A70BBB002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,12 +166,12 @@
 		F058C26922A7088A002FCEA1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F058C28822A70BBB002FCEA1 /* Package.swift */,
+				F058C28722A70BBB002FCEA1 /* README.md */,
 				F058C26B22A708DB002FCEA1 /* Info.plist */,
 				F058C26A22A708DA002FCEA1 /* Licensed.h */,
-				F058C25822A6FE35002FCEA1 /* Package.swift */,
 				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
 				F04BBF75228EE672007E8ADA /* LICENSE */,
-				F04BBF74228EE672007E8ADA /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
