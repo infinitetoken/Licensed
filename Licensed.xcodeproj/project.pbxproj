@@ -21,10 +21,10 @@
 		F04BBF96228EE884007E8ADA /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF94228EE884007E8ADA /* License.swift */; };
 		F04BBF9A228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
 		F04BBF9B228EE8C5007E8ADA /* LicenseV8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */; };
-		F04BBFA0228EFFFE007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF9F228EFFFE007E8ADA /* Regex.framework */; };
 		F04BBFA2228F000C007E8ADA /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBFA1228F000C007E8ADA /* Regex.framework */; };
 		F058C26C22A708DD002FCEA1 /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F058C26A22A708DA002FCEA1 /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F058C26D22A708DD002FCEA1 /* Licensed.h in Headers */ = {isa = PBXBuildFile; fileRef = F058C26A22A708DA002FCEA1 /* Licensed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F09E7A4822BADC6B0025CA97 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BBF9F228EFFFE007E8ADA /* Regex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +51,10 @@
 		F02F5FD222949066008FB7CA /* LicenseV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV3Tests.swift; sourceTree = "<group>"; };
 		F04BBF55228EE439007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF5E228EE439007E8ADA /* LicensedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04BBF75228EE672007E8ADA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = Sources/LICENSE; sourceTree = SOURCE_ROOT; };
 		F04BBF7B228EE760007E8ADA /* Licensed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Licensed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF83228EE761007E8ADA /* LicensedMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicensedMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04BBF94228EE884007E8ADA /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		F04BBF99228EE8C5007E8ADA /* LicenseV8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseV8Tests.swift; sourceTree = "<group>"; };
-		F04BBF9D228EFFA4007E8ADA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = Sources/Cartfile; sourceTree = SOURCE_ROOT; };
 		F04BBF9F228EFFFE007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
 		F04BBFA1228F000C007E8ADA /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
 		F058C25722A6FDE0002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -64,6 +62,8 @@
 		F058C26B22A708DB002FCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F058C28722A70BBB002FCEA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F058C28822A70BBB002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		F09E7A4622BADBF10025CA97 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		F09E7A4722BADBF10025CA97 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BBFA0228EFFFE007E8ADA /* Regex.framework in Frameworks */,
+				F09E7A4822BADC6B0025CA97 /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +166,12 @@
 		F058C26922A7088A002FCEA1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F09E7A4722BADBF10025CA97 /* Cartfile */,
+				F09E7A4622BADBF10025CA97 /* LICENSE */,
 				F058C28822A70BBB002FCEA1 /* Package.swift */,
 				F058C28722A70BBB002FCEA1 /* README.md */,
 				F058C26B22A708DB002FCEA1 /* Info.plist */,
 				F058C26A22A708DA002FCEA1 /* Licensed.h */,
-				F04BBF9D228EFFA4007E8ADA /* Cartfile */,
-				F04BBF75228EE672007E8ADA /* LICENSE */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
