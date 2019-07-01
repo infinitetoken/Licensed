@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 //
 //  Package.swift
 //  Licensed
@@ -32,7 +32,6 @@ let package = Package(
             name: "LicensedTests",
             dependencies: ["Licensed"],
             path: "Tests"),
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
 
