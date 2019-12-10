@@ -4,9 +4,9 @@ A drivers license parser for Swift
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [AAMVA Standard Supported Fields](#usage)
-- [AAMVA Element IDs](#usage)
-- [Example Payload](#example_payload)
+- [AAMVA Standard Supported Fields](#aamva-standard-supported-fields)
+- [AAMVA Element IDs](#aamva-element-ids)
+- [Example Payload](#example-payload)
 - [Attribution](#attribution)
 - [License](#license)
 
