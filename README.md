@@ -1,6 +1,28 @@
 # Licensed
 
-### Usage
+A drivers license parser for Swift
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [AAMVA Standard Supported Fields](#usage)
+- [AAMVA Element IDs](#usage)
+- [Example Payload](#example_payload)
+- [Attribution](#attribution)
+- [License](#license)
+
+## Installation
+
+Licensed can be installed using the Swift Package Manager. Add the following to your `Package.swift` file:
+
+```swift
+
+dependencies: [
+    .Package(url: "https://github.com/infinitetoken/Licensed.git", from: "2.0.0")
+]
+
+```
+
+## Usage
 
 ```swift
 
@@ -16,7 +38,7 @@ print(license.lastName)
 // => Optional("Public")
 ```
 
-### AAMVA Standard Supported Fields
+## AAMVA Standard Supported Fields
 | Name                   | Description                                                                                                                                          | Type   | `License` Attribute |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:--------------------------|
 | First Name             | Customer First Name                                                                                                                                  | String | `firstName`               |
@@ -48,7 +70,7 @@ print(license.lastName)
 | Suffix Alias           | Other suffix by which cardholder is known                                                                                                            | String | `suffixAlias`             |
 | Name Suffix            | Name Suffix                                                                                                                                          | Enum   | `suffix`                  |
 
-### AAMVA Element IDs
+## AAMVA Element IDs
 
 Below is a table of AAMVA Element Ids and the fields to which they map by AAMVA Version.
 
@@ -87,7 +109,7 @@ Below is a table of AAMVA Element Ids and the fields to which they map by AAMVA 
 | Suffix Alias           |    DBR    |   `--`    |    DBS    |    DBS    |    DBS    |    DBS    |    DBS    |    DBS    |     Y     |
 | Name Suffix            |    DBN    |  **DCU**  |    DCU    |    DCU    |    DCU    |    DCU    |    DCU    |    DCU    |     Y     |
 
-### Example of a raw driver's license payload
+## Example Payload
 
 Version 8 Example License Data
 
@@ -133,10 +155,10 @@ ZAB
 ZAC
 ```
 
-### Attribution
+## Attribution
 
 This library was heavily influenced by the work from https://github.com/ksoftllc/license-parser.
 
-### License
+## License
 
-MIT
+Licensed is released under the MIT license. [See LICENSE](https://github.com/infinitetoken/Licensed/blob/master/LICENSE) for details.
